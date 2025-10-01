@@ -1,0 +1,31 @@
+<h2>🟢 Ejercicio 1 – Variables</h2>
+<h2>Crea un componente que muestre el nombre de un usuario en pantalla y en un campo de texto.</h2>
+<app-ejercicio1></app-ejercicio1>
+
+<h2>🟢 Ejercicio 2 – Eventos</h2>
+<h2>Haz que al hacer clic sobre un elemento en pantalla se incremente un número.
+Agrega también un botón para reiniciar ese número.</h2>
+<app-ejercicio1></app-ejercicio1>
+
+<h2>🟠 Ejercicio 3 – ngModel</h2>
+<h2>Crea un campo de texto que esté conectado bidireccionalmente con una variable y muestre su valor en tiempo real en la pantalla.</h2>
+<h2>Ciudad: {{ city }}</h2>
+<input type="text" [(ngModel)]="city" placeholder="Escribe una ciudad">
+
+<h2>🟡 Ejercicio 4 – Condicionales if</h2>
+<h2>Muestra un texto diferente en función de si el usuario está logueado o no.
+Permite cambiar el estado con un botón.</h2>
+
+@if (logueado){
+  <p>Esta logueado</p>
+}@else {
+  <p>No esta logueado</p>
+}
+
+<h2>🟡 Ejercicio 5 – Bucles for</h2>
+<h2>Muestra una lista de elementos en pantalla a partir de un array.
+Agrega un botón para añadir un nuevo elemento a la lista.</h2>
+
+@for (equipo of equipos; track $index){
+  <p> {{ equipo }} </p>
+}
