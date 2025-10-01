@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input,input} from '@angular/core';
 
 @Component({
   selector: 'app-ejercicio1',
@@ -20,5 +20,9 @@ export class Ejercicio1 {
     this.numero = 0
   }
 
+  @Input() pais: string = "";
+
+  ciudad = input<string>("");
+  
 
 }

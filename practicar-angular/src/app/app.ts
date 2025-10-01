@@ -15,4 +15,8 @@ export class App {
   logueado: boolean = false;
 
   equipos: string[] = ["Barcelona","Atleti","Liverpool"]
+
+  pais = "Noruega";
+
+  ciudad = "Novés";
 }
