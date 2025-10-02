@@ -39,3 +39,10 @@ Agrega un botón para añadir un nuevo elemento a la lista.</h2>
 <h2>🔵 Ejercicio 7 – input()</h2>
 <h2>Repite el ejercicio anterior pero usando la función input() en lugar de @Input.</h2>
 <app-ejercicio1 [ciudad]="ciudad"></app-ejercicio1>
+
+
+<h2>🔴 Ejercicio 8 – @Output</h2>
+<h2>Crea un componente hijo con un formulario de login que envíe el nombre introducido al componente padre cuando se pulse un botón.
+Muestra el nombre recibido en el padre.</h2>
+<h3>Hola {{ usuario }}</h3>
+<app-ejercicio1 (login)="userLogin2($event)"></app-ejercicio1>

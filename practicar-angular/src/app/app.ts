@@ -19,4 +19,10 @@ export class App {
   pais = "Noruega";
 
   ciudad = "Novés";
+
+  usuario:string = "";
+
+  userLogin2(e:string){
+    this.usuario = e;
+  }
 }

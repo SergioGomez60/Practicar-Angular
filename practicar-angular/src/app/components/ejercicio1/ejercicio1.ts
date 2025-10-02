@@ -1,4 +1,4 @@
-import { Component, Input,input} from '@angular/core';
+import { Component, EventEmitter, Input,input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-ejercicio1',
@@ -23,6 +23,12 @@ export class Ejercicio1 {
   @Input() pais: string = "";
 
   ciudad = input<string>("");
+
+  @Output() login: EventEmitter<string> = new EventEmitter<string>; // permite que un componente hijo envíe datos o eventos al componente padre.
+  usuario: string = "Sara";
+  userLogin(){
+    this.login.emit(this.usuario);
+  }
   
 
 }
